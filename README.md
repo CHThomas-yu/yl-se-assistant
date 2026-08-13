@@ -4,13 +4,19 @@ A reusable AI workflow skill for YL SE and pre-sales teams.
 
 面向 YL SE 与售前团队的可复用 AI 工作流 Skill。
 
-## Recommended Installation / 推荐安装方式
+## Installation Options / 安装方式
 
-For most users, the recommended method is to download the ZIP package and upload it directly to an AI tool that supports Skills. No CMD, Git, Node.js, or proxy configuration is required.
+Two independent installation formats are available. The original ZIP package remains unchanged, while the npm package provides one-command installation for Codex users.
 
-对于大多数用户，推荐直接下载 ZIP 安装包，并上传到支持 Skills 的 AI 工具中。无需使用 CMD，也无需配置 Git、Node.js 或代理。
+目前提供两种互不影响的安装方式：原有 ZIP 安装包保持不变；npm 软件包面向 Codex 用户提供一条命令安装。
 
-### 1. Download / 下载
+### Option 1: ZIP upload (recommended) / 方式一：上传 ZIP（推荐）
+
+Use this method for ChatGPT or any AI tool that provides a Skill upload interface. No CMD, Git, Node.js, or proxy configuration is required.
+
+适用于 ChatGPT 或任何提供 Skill 上传界面的 AI 工具。无需使用 CMD，也无需配置 Git、Node.js 或代理。
+
+#### Download / 下载
 
 Download the latest package:
 
@@ -18,7 +24,7 @@ Download the latest package:
 
 **[Download yl-se-assistant.zip / 下载 yl-se-assistant.zip](https://raw.githubusercontent.com/CHThomas-yu/yl-se-assistant/main/dist/yl-se-assistant.zip)**
 
-### 2. Upload to your AI tool / 上传到 AI 工具
+#### Upload to your AI tool / 上传到 AI 工具
 
 1. Open the **Skills**, **Agent Skills**, **Extensions**, or similar management page in your AI tool.  
    打开 AI 工具中的 **Skills**、**Agent Skills**、**Extensions** 或类似管理页面。
@@ -34,6 +40,36 @@ Download the latest package:
 > Skill installation menus and invocation syntax vary by AI tool, version, and workspace policy. Use the tool's current Skill management interface when available.
 >
 > 不同 AI 工具、版本及企业工作区的安装入口和调用方式可能不同，请以对应工具当前提供的 Skill 管理界面为准。
+
+### Option 2: npm installation for Codex / 方式二：通过 npm 安装到 Codex
+
+Prerequisites: Node.js 18 or later and Codex CLI. Git is not required.
+
+前置条件：Node.js 18 或更高版本，以及 Codex CLI。无需安装 Git。
+
+Install the GitHub-hosted npm package:
+
+安装托管在 GitHub 上的 npm 软件包：
+
+```cmd
+npm install -g https://raw.githubusercontent.com/CHThomas-yu/yl-se-assistant/main/dist/yl-se-assistant-1.0.0.tgz
+```
+
+The package installs the Skill to the Codex user directory:
+
+该软件包会将 Skill 安装到 Codex 用户目录：
+
+```text
+%USERPROFILE%\.agents\skills\yl-se-assistant
+```
+
+After the package is published to the npm Registry, the shorter command will be:
+
+软件包正式发布至 npm Registry 后，可使用更短的命令：
+
+```cmd
+npm install -g yl-se-assistant
+```
 
 ## How to Use / 如何调用
 
@@ -65,19 +101,13 @@ The Skill can also trigger automatically when the request clearly matches its wo
 
 ## Update / 更新
 
-To update the Skill, download the latest ZIP package from this repository and upload it again. If the AI tool does not support replacement, remove the old version first and then import the new package.
+For the ZIP version, download the latest package and upload it again. If the AI tool does not support replacement, remove the old version first. After npm Registry publication, update the npm version with:
 
-如需更新，请重新下载本仓库中的最新 ZIP 并再次上传。如果 AI 工具不支持直接覆盖，请先移除旧版本，再导入新版本。
+ZIP 版本请重新下载最新安装包并再次上传；如果 AI 工具不支持覆盖，请先移除旧版本。npm Registry 发布后，可使用以下命令更新 npm 版本：
 
-## CMD Installation / CMD 命令行安装
-
-CMD-based installation is currently considered an advanced or experimental method because it depends on the user's operating system, Node.js, Git, network access, proxy variables, and AI-tool installation paths.
-
-CMD 命令行安装目前属于高级或实验性方式，因为它会受到操作系统、Node.js、Git、网络访问、代理变量以及不同 AI 工具安装路径的影响。
-
-For a stable team-wide rollout, use the ZIP upload method above. A simplified and environment-independent CMD installation method may be added in a future release.
-
-团队内部统一使用时，请优先采用上方的 ZIP 上传方式。后续版本将继续迭代更简单、尽量不依赖用户环境的 CMD 安装方案。
+```cmd
+npm install -g yl-se-assistant@latest
+```
 
 ## Package Structure / 安装包结构
 

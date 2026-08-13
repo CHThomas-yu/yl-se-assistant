@@ -4,6 +4,20 @@ A reusable AI workflow skill for YL SE and pre-sales teams.
 
 面向 YL SE 与售前团队的可复用 AI 工作流 Skill。
 
+## What It Does / 功能简介
+
+YL SE Assistant is designed for overseas pre-sales and SE work. It helps users organize customer emails and project context, improve business communication, research technical questions using official sources, review solution compatibility, and handle support issues more professionally.
+
+YL SE Assistant 面向海外售前与 SE 日常工作，帮助用户整理客户邮件和项目背景、优化商务沟通、基于官方资料检索技术问题、判断方案兼容性，并更专业地处理售后问题。
+
+It includes three main workflows:
+
+主要包含三类工作流：
+
+- **Communication / 商务沟通**：邮件翻译、完整理解、要点提炼、回复思路和英文邮件撰写。
+- **Technical research / 技术检索**：产品参数、功能、兼容性、固件及官方资料引用。
+- **Solution and support / 方案与售后**：产品选型、BOM 与部署建议、初步排查及 Ticket 分流。
+
 ## Installation Options / 安装方式
 
 Two independent installation formats are available. The original ZIP package remains unchanged, while the npm package provides one-command installation for Codex users.

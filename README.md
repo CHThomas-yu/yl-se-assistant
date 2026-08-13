@@ -47,12 +47,12 @@ Prerequisites: Node.js 18 or later and Codex CLI. Git is not required.
 
 前置条件：Node.js 18 或更高版本，以及 Codex CLI。无需安装 Git。
 
-Install the GitHub-hosted npm package:
+Install the package from the npm Registry:
 
-安装托管在 GitHub 上的 npm 软件包：
+从 npm Registry 安装软件包：
 
 ```cmd
-npm install -g https://raw.githubusercontent.com/CHThomas-yu/yl-se-assistant/main/dist/yl-se-assistant-1.0.0.tgz
+npm install -g yl-se-assistant
 ```
 
 The package installs the Skill to the Codex user directory:
@@ -63,13 +63,11 @@ The package installs the Skill to the Codex user directory:
 %USERPROFILE%\.agents\skills\yl-se-assistant
 ```
 
-After the package is published to the npm Registry, the shorter command will be:
+Package page:
 
-软件包正式发布至 npm Registry 后，可使用更短的命令：
+软件包页面：
 
-```cmd
-npm install -g yl-se-assistant
-```
+[npmjs.com/package/yl-se-assistant](https://www.npmjs.com/package/yl-se-assistant)
 
 ## How to Use / 如何调用
 
@@ -101,9 +99,9 @@ The Skill can also trigger automatically when the request clearly matches its wo
 
 ## Update / 更新
 
-For the ZIP version, download the latest package and upload it again. If the AI tool does not support replacement, remove the old version first. After npm Registry publication, update the npm version with:
+For the ZIP version, download the latest package and upload it again. If the AI tool does not support replacement, remove the old version first. Update the npm version with:
 
-ZIP 版本请重新下载最新安装包并再次上传；如果 AI 工具不支持覆盖，请先移除旧版本。npm Registry 发布后，可使用以下命令更新 npm 版本：
+ZIP 版本请重新下载最新安装包并再次上传；如果 AI 工具不支持覆盖，请先移除旧版本。npm 版本可使用以下命令更新：
 
 ```cmd
 npm install -g yl-se-assistant@latest

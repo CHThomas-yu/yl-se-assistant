@@ -28,9 +28,9 @@ No manual download is required. Open Windows CMD and run:
 mkdir "%USERPROFILE%\.agents\skills" 2>nul & curl.exe -fL "https://raw.githubusercontent.com/CHThomas-yu/yl-se-assistant/main/dist/yl-se-assistant.zip" -o "%TEMP%\yl-se-assistant.zip" && tar.exe -xf "%TEMP%\yl-se-assistant.zip" -C "%USERPROFILE%\.agents\skills" && if exist "%USERPROFILE%\.agents\skills\yl-se-assistant\SKILL.md" (echo Installation successful) else (echo Installation failed)
 ```
 
-The command automatically locates the latest Release, downloads the package, extracts it to the user-level Codex Skills directory, and verifies the installation.
+The command downloads the current package from this repository, extracts it to the user-level Codex Skills directory, and verifies the installation.
 
-该命令会自动定位最新 Release、下载安装包、解压至用户级 Codex Skills 目录并检查安装结果。
+该命令会从当前仓库自动下载安装包、解压至用户级 Codex Skills 目录并检查安装结果。
 
 ## Use in Codex / 在 Codex 中调用
 

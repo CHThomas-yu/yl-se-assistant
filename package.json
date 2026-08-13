@@ -1,0 +1,38 @@
+{
+  "name": "yl-se-assistant",
+  "version": "1.0.0",
+  "description": "Install the YL SE Assistant skill for Codex.",
+  "keywords": [
+    "codex",
+    "agent-skill",
+    "presales",
+    "se-assistant"
+  ],
+  "author": "CHThomas-yu",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/CHThomas-yu/yl-se-assistant#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHThomas-yu/yl-se-assistant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CHThomas-yu/yl-se-assistant/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "README.md",
+    "skill/yl-se-assistant",
+    "scripts/install-skill.js",
+    "scripts/verify-package.js"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/install-skill.js",
+    "prepack": "node scripts/verify-package.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

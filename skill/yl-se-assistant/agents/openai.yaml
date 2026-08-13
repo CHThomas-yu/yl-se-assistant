@@ -1,0 +1,14 @@
+interface:
+  display_name: YL SE Assistant
+  short_description: Translate, research, and handle YL presales cases
+  default_prompt: Use $yl-se-assistant to translate the latest email, extract
+    the request, verify YL technical points, and prepare the next action.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

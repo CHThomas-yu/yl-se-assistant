@@ -32,6 +32,16 @@ The command downloads the current package from this repository, extracts it to t
 
 该命令会从当前仓库自动下载安装包、解压至用户级 Codex Skills 目录并检查安装结果。
 
+### Windows CMD with Clash or a Proxy / 使用 Clash 或代理
+
+If `curl` reports a malformed or unsupported proxy, clear the existing proxy variables and provide the Clash HTTP proxy explicitly. Replace `52423` if your Clash HTTP port is different.
+
+如果 `curl` 提示代理格式错误，请先清除已有代理变量，再显式指定 Clash HTTP 代理。如果你的 Clash HTTP 端口不同，请替换 `52423`。
+
+```cmd
+set "HTTP_PROXY=" & set "HTTPS_PROXY=" & set "ALL_PROXY=" & mkdir "%USERPROFILE%\.agents\skills" 2>nul & curl.exe --proxy "http://127.0.0.1:52423" -fL "https://raw.githubusercontent.com/CHThomas-yu/yl-se-assistant/main/dist/yl-se-assistant.zip" -o "%TEMP%\yl-se-assistant.zip" && tar.exe -xf "%TEMP%\yl-se-assistant.zip" -C "%USERPROFILE%\.agents\skills" && if exist "%USERPROFILE%\.agents\skills\yl-se-assistant\SKILL.md" (echo Installation successful) else (echo Installation failed)
+```
+
 ## Use in Codex / 在 Codex 中调用
 
 Start Codex:
@@ -64,9 +74,9 @@ $yl-se-assistant 完整翻译最新邮件，然后提炼重点。
 
 1. Download `yl-se-assistant.zip` using the link above.
    使用上方链接下载 `yl-se-assistant.zip`。
-2. Open the **Skills** page and upload the ZIP without extracting it.
+2. Open the **Skills** page and upload the ZIP without extracting it.  
    打开 **Skills** 页面，直接上传 ZIP，无需解压。
-3. Start a new conversation and select the installed skill with `@`.
+3. Start a new conversation and select the installed skill with `@`.  
    打开新对话，输入 `@` 并选择已安装的 Skill。
 
 ## Package Structure / 安装包结构

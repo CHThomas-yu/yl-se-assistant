@@ -4,6 +4,12 @@ A reusable AI workflow skill for YL SE and pre-sales teams.
 
 面向 YL SE 与售前团队的可复用 AI 工作流 Skill。
 
+**Created and maintained by Thomas Qiu.**  
+For feedback, collaboration, or update requests, contact [chthomasyu@gmail.com](mailto:chthomasyu@gmail.com).
+
+**由 Thomas Qiu 创建并维护。**  
+如有建议、合作或更新需求，请联系 [chthomasyu@gmail.com](mailto:chthomasyu@gmail.com)。
+
 ## What It Does / 功能简介
 
 YL SE Assistant is designed for overseas pre-sales and SE work. It helps users organize customer emails and project context, improve business communication, research technical questions using official sources, review solution compatibility, and handle support issues more professionally.
